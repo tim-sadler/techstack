@@ -33,7 +33,9 @@ ui <- fluidPage(
            
            tags$br(),
            
-           tags$div("Feel free to experiment with the inputs on the left. The interactive graph was created with ggplot2 and shiny in R. Raw data and code are available via GitHub: <LINK>"),
+           tags$div("Feel free to experiment with the inputs on the left. The interactive graph was created with ggplot2 and shiny in R. Raw data and code are available via GitHub:"),
+           
+           tags$a("https://github.com/tim-sadler/techstack", href="https://github.com/tim-sadler/techstack"),
            
            tags$br(),  
 
