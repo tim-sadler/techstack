@@ -2,8 +2,6 @@ library("shiny")
 library("data.table")
 library("ggplot2")
 
-windowsFonts(roboto = windowsFont("Segoe UI"))
-
 skills <- as.data.table(read.csv("techstack.csv"))
 skills[,Category:=as.factor(Category)]
 
@@ -91,7 +89,7 @@ server <- function(input, output) {
             scale_x_continuous(limits=c(0, xl+1)) +
             scale_y_continuous(limits=c(0, yl+1)) +
             coord_equal(ratio=(xl/(yl))) +
-            theme(legend.position="bottom", legend.background = element_rect(fill = "transparent",colour = "#141010"), legend.text = element_text(size = 12, family = "roboto", color = "#fff6fb")) +
+            theme(legend.position="bottom", legend.background = element_rect(fill = "transparent",colour = "#141010"), legend.text = element_text(size = 12, color = "#fff6fb")) +
             theme(plot.background = element_rect(fill = "#141010")) +
             theme(
                 panel.grid.major = element_line(colour = "#fff6fb"),
@@ -100,7 +98,7 @@ server <- function(input, output) {
             ) +
             theme(legend.key=element_blank()) +
             guides(colour=guide_legend(override.aes=list(size=6,fill=NA))) +
-            theme(axis.text=element_text(size=12,family = "roboto",color="#fff6fb"),plot.subtitle=element_text(size=10,family = "roboto",color="#fff6fb"),axis.title=element_text(size=14,face="bold",family = "roboto",color="#fff6fb"),title=element_text(size=16,family = "roboto",color="#fff6fb"),axis.text.x=element_text(family = "roboto",color="#fff6fb"),text=element_text(family="roboto",color="#fff6fb"))
+            theme(axis.text=element_text(size=12,color="#fff6fb"),plot.subtitle=element_text(size=10,color="#fff6fb"),axis.title=element_text(size=14,face="bold",color="#fff6fb"),title=element_text(size=16,color="#fff6fb"),axis.text.x=element_text(color="#fff6fb"),text=element_text(color="#fff6fb"))
 
     }, height = 700, bg="transparent")
 }
