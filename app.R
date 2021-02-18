@@ -73,9 +73,8 @@ ui <- fluidPage(
         )
     ),
     plotOutput("distPlot", width = "100%"),
-    tags$br(),
     tags$br()
-    
+
 )
 
 
