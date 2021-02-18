@@ -53,11 +53,12 @@ ui <- fluidPage(
             selectInput("dimX",
                         "X-Axis:",
                         numericcolumns,
-                        numericcolumns[2])
+                        numericcolumns[2]),
+            sliderInput("jitterlevel","Jitter:",0,1,0.5,step=0.1)
         ),
         column(4,
                
-               checkboxGroupInput("cats","Categories:",levels(unique(skills[,Category])), selected = levels(unique(skills[,Category]))[c(1:3)])
+               checkboxGroupInput("cats","Categories:",levels(unique(skills[,Category])), selected = levels(unique(skills[,Category]))[c(1,3,6)])
                
         ),
         column(4,
@@ -86,7 +87,7 @@ server <- function(input, output) {
         yl <- skills[Category %in% input$cats,unique(max(.SD)),.SDcols = c(input$dimY)]
 
         ggplot() + 
-            geom_text(data = skills[Category %in% input$cats], aes_string(x=input$dimX,y=input$dimY,label='Name',color='Category'),position=position_jitter(width = 1, height = 1),size=5, fontface = "bold", show.legend = FALSE) + 
+            geom_text(data = skills[Category %in% input$cats], aes_string(x=input$dimX,y=input$dimY,label='Name',color='Category'),position=position_jitter(width = 0.5, height = input$jitterlevel, seed = 42),size=5, fontface = "bold", show.legend = FALSE) + 
             geom_point(data = skills[Category %in% input$cats], aes_string(x=input$dimX,y=input$dimY,color='Category'),size=NA) + 
             scale_x_continuous(limits=c(0, xl+1)) +
             scale_y_continuous(limits=c(0, yl+1)) +
