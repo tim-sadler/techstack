@@ -1,44 +1,44 @@
 Name,Category,Years_of_Experience,Daily_Usage,Enthusiasm,Ease_of_Use
+ggplot2,Analysis,4,5,4,3
+data.table,Analysis,3,5,4,4
+tidyverse,Analysis,4,3,3,2
+Rcpp,Analysis,2,3,3,3
+pandas,Analysis,2,1,4,3
+numpy,Analysis,2,1,3,3
+matplotlib,Analysis,2,1,3,3
+Keras,Analysis,1,1,5,4
+Caret,Analysis,1,1,5,4
+Apache server,Database/Cloud,4,1,1,1
+Github,Database/Cloud,2,3,3,3
+AWS,Database/Cloud,2,1,2,2
+PHP,Language,10,1,2,2
+HTML,Language,10,2,3,4
+CSS,Language,10,2,2,3
+SQL,Language,10,2,4,3
+R,Language,6,5,5,4
+JavaScript,Language,7,2,2,2
+Python,Language,3,1,4,3
+Scala,Language,1,1,4,2
+C++,Language,1,1,3,1
 Curiosity,People Skills,33,5,5,5
 Empathy,People Skills,25,4,4,5
 Ambition,People Skills,20,4,4,5
 Leadership experience,People Skills,15,3,4,5
 Project management,People Skills,15,3,2,3
-MS Office,Software,15,3,2,4
 Entrepreneurship,People Skills,10,3,4,4
-HTML,Language,10,2,3,4
-CSS,Language,10,2,2,3
-SQL,Language,10,2,4,3
+MS Office,Software,15,3,2,4
 iWork,Software,10,1,2,4
 SPSS,Software,8,1,1,5
-R,Language,6,5,5,4
-RStudio,Software,5,5,5,4
-ggplot2,Analysis,4,5,4,3
-data.table,Analysis,3,5,4,4
-Wordpress,WebTools,5,1,2,2
-tidyverse,Analysis,4,3,3,2
+RStudio,Software,6,5,5,4
 STATA,Software,4,2,2,3
-Apache server,Database/Cloud,4,1,1,1
 GAUSS,Software,4,1,1,2
-Google Analytics,WebTools,4,1,2,2
-Facebook Ad Manager,WebTools,4,1,2,2
-Github,Database/Cloud,2,3,3,3
-Rcpp,Analysis,1,3,3,3
-JavaScript,Language,2,2,2,2
-AWS,Database/Cloud,2,1,2,2
-pandas,Analysis,2,1,4,3
-numpy,Analysis,2,1,3,3
-matplotlib,Analysis,2,1,3,3
-Python,Language,3,1,4,3
-Scala,Language,1,1,4,2
-C++,Language,1,1,3,1
-Caret,Analysis,1,1,5,4
 Tableau,Software,1,1,2,4
 Jupyter,Software,1,1,3,5
+Anaconda,Software,1,1,3,5
 Linear Regression,Statistics,6,5,5,5
 Logistic Regression,Statistics,6,5,5,5
 Multi-level models,Statistics,3,5,5,5
 Baysian estimation,Statistics,2,2,5,2
 Maximum simulated likelihood,Statistics,4,4,5,4
-Unsupervised learning,Statistics,4,2,5,4
+Unsupervised learning,Statistics,6,2,5,4
 Machine learning,Statistics,2,2,5,4
