@@ -3,6 +3,7 @@ ggplot2,Analysis,4,5,4,3
 data.table,Analysis,3,5,4,4
 tidyverse,Analysis,4,3,3,2
 Rcpp,Analysis,2,3,3,3
+Eevee,Analysis,5,1,5,3
 pandas,Analysis,2,1,4,3
 numpy,Analysis,2,1,3,3
 matplotlib,Analysis,2,1,3,3
@@ -42,3 +43,5 @@ Baysian estimation,Statistics,2,2,5,2
 Maximum simulated likelihood,Statistics,4,4,5,4
 Unsupervised learning,Statistics,6,2,5,4
 Machine learning,Statistics,2,2,5,4
+Count regressions,Statistics,3,5,5,4
+Time series,Statistics,4,3,3,3
